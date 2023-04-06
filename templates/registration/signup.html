@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Ro'yhatdan o'tish</h2>
+    <form action="" method="post">{% csrf_token %}
+        <!-- {{ form.as_p }} -->
+        <label for="">Username</label> {{ form.username }} <br>
+        <label for="">Firstname</label> {{ form.first_name }} <br>
+        <label for="">Lastname</label> {{ form.last_name }} <br>
+        <label for="">Email</label> {{ form.email }} <br>
+        <label for="">Age</label> {{ form.age }} <br>
+        <label for="">Password</label> {{ form.password1 }} <br>
+        <label for="">Password confirm</label> {{ form.password2 }} <br>
+        <button type="submit">yuborish</button>
+    </form>
+{% endblock content %}
