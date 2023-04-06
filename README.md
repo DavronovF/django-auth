@@ -1,5 +1,5 @@
 # django-auth
 # login
 # register
-# change paswword
+# change password
 # reset password via email
